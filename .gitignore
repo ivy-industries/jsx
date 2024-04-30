@@ -1,0 +1,4 @@
+lib
+types
+*.js
+!/src/**

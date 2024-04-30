@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    ["transform-jsx", {
+      "module": "@ivy-industries/jsx",
+      "useVariables": true
+    }],
+    ["transform-jsx-fragment", {
+      "moduleName": "@ivy-industries/jsx",
+      "ignoreModuleCheck": false
+    }]
+  ]
+}

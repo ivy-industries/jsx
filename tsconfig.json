@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "isolatedModules": true,
+    "module": "nodenext",
+    "declaration": true,
+    "rootDir": "./src",
+    "declarationDir": "./types",
+    "target": "ESNext",
+    "moduleResolution": "nodenext",
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "outDir": "./",
+    "allowJs": false,
+    "experimentalDecorators": true,
+    "listEmittedFiles": true,
+    "lib": ["ES6", "DOM", "es2022"],
+    "allowSyntheticDefaultImports": true,
+    "types": ["node"]
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["./node_modules/**/*", "./types/**/*", "./src/watch.ts"]
+}

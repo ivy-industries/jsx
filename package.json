@@ -1,0 +1,67 @@
+{
+  "name": "@ivy-industries/jsx",
+  "version": "1.0.0-alpha.1",
+  "license": "Apache-2.0",
+  "description": "jsx library for reactive components.",
+  "type": "module",
+  "main": "index.js",
+  "types": "./types.index.d.ts",
+  "exports": {
+    "./component": "./lib/jsx-component.js"
+  },
+  "files": [
+    "lib",
+    "types",
+    "index.js"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "./scripts/build.sh",
+    "build-watcher": "npx tsc ./src/watch.ts --outDir ./ --target esnext --moduleResolution nodenext --module nodenext && chmod u+x ./watch.js",
+    "clean": "./scripts/clean.sh",
+    "lint": "npx eslint . --ext .ts --ext .tsx",
+    "lint-fix": "npx eslint . --fix --ext .ts --ext .tsx",
+    "tsc-watch": "./watch.js",
+    "eslint-watch": "npx esw --watch . --ext .tsx --ext .ts --fix",
+    "update": "npx npm-check-updates -u"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.4",
+    "@types/node": "^20.12.7",
+    "@typescript-eslint/eslint-plugin": "^7.7.1",
+    "@typescript-eslint/parser": "^7.7.1",
+    "babel-plugin-transform-jsx": "^2.0.0",
+    "babel-plugin-transform-jsx-fragment": "^0.1.5",
+    "eslint": "^8.57.0",
+    "eslint-plugin-perfectionist": "^2.10.0",
+    "eslint-watch": "^8.0.0",
+    "npm-check-updates": "^16.14.20",
+    "tsc-watch": "^6.2.0",
+    "typescript": "^5.4.5"
+  },
+  "keywords": [
+    "jsx",
+    "reactive",
+    "components",
+    "ivy-industries"
+  ],
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/simonedelpopolo"
+    }
+  ],
+  "author": {
+    "name": "ivy-industries",
+    "email": "grow@ivy.run",
+    "url": "https://github.com/ivy-industries"
+  },
+  "homepage": "https://github.com/ivy-industries/jsx#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivy-industries/jsx.git"
+  }
+}
