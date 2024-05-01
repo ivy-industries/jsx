@@ -1,17 +1,19 @@
 {
   "name": "@ivy-industries/jsx",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.3",
   "license": "Apache-2.0",
   "description": "jsx library for reactive components.",
   "type": "module",
   "main": "index.js",
-  "types": "./types.index.d.ts",
+  "types": "./types/index.d.ts",
   "exports": {
+    ".": "./jsx.d.ts",
     "./component": "./lib/jsx-component.js"
   },
   "files": [
     "lib",
     "types",
+    "jsx.d.ts",
     "index.js"
   ],
   "publishConfig": {
